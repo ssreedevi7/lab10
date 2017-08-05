@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#press").click(function(){
+    $("h1").css("border", "5px dotted maroon");
+});
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#toggle").click(function(){
+        $("div").animate({
+            height: 'toggle'
+        });
+    });
+});
+</script> 
+<script>
+$(document).ready(function(){
+$("#add").click(function(){
+    $("ol").append("<li>DATABASE THEORY AND DESIGN</li>");
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#remove").click(function(){
+        $("p").remove(".test");
+    });
+});
+</script>
+<style>
+.test {
+    color: blue;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+<h1> Welcome to my project </h1>
+<p>Press Remove Button To Delete Below Two Lines.</p>
+<p class="test">This weather was nice.</p>
+<p class="test">HTML is easy to learn.</p>
+<ol>
+  <li>AJAX</li>
+  <li>JAVA</li>
+</ol>
+
+<br><br>
+<div style="background:#ff00ff;height:100px;width:100px;position:absolute;"></div>
+<br><br><br><br><br><br>
+<input type="button" value="Press" id="press">
+<input type="button" value="Toggle" id="toggle">
+<input type="button" value="Add" id="add">
+<input type="button" value="Remove" id="remove">
+
+
+</body>
+</html>
